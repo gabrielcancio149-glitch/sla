@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0057d9;
+}
+.logo span {
+    color: #ffcc00;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #0057d9;
+}
+
+/* HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80') center/cover;
+    text-align: center;
+    padding: 150px 20px;
+    color: white;
+    text-shadow: 2px 2px 6px black;
+}
+.hero h1 {
+    font-size: 48px;
+    color: #ffcc00;
+}
+.hero p {
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0057d9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+}
+.btn:hover {
+    background: #003f9c;
+}
+
+/* PRODUTOS */
+.produtos {
+    padding: 60px 40px;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+    border-top: 4px solid #ffcc00;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.preco {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0057d9;
+    margin: 10px 0 15px;
+}
+
+/* CONTATO */
+.contato {
+    padding: 60px 40px;
+    background: #fff;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form textarea {
+    height: 100px;
+}
+
+/* FOOTER */
+footer {
+    background: #0057d9;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
